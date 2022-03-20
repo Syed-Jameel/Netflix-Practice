@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    overflow-x: hidden;
+}
+
+.container-1 {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    border-bottom: 10px solid #303030;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr; 
+    align-items: center;
+    padding: 0 30px;
+}
+
+.header .language select {
+    /* padding: 8px 12px; */
+    background: none;
+    color: white;
+    /* outline:1px solid white;
+    border-radius: 3px; */
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.header .language {
+    border: 1px solid darkgray;
+    width: 80px;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.header .language select option {
+    background-color: darkgray;
+    font-weight: 600;
+}
+
+.header .signin a {
+    background-color:#E50914;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 3px;
+}
+
+/* section-1 */
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+}
+
+.section-1 .main {
+    width: 50%;   
+}
+
+.section-1 .main h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.section-1 .main h2 {
+    font-size: 25px;
+    font-weight:lighter;
+    margin-bottom: 40px;
+}
+
+.section-1 .main p {
+    font-size: 18px;
+}
+
+/* form */
+.section-1 .main form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-1 .main form input {
+    width: 550px;
+    height: 65px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    position: relative;
+    /* caret-color: black;  */
+}
+
+.section-1 .main form input::placeholder {
+    font-size: 15px;   
+}
+
+.section-1 .main form input:focus::placeholder {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 0;
+    color: lightslategray;
+}
+
+.section-1 .main form button {
+    width: 250px;
+    height: 65px;
+    background-color: #E50914;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;   
+} 
+
+.section-1 .main form .input-with-comment {
+    width:550px;
+    height:100px;
+    /* background-color: antiquewhite; */
+}
+
+.section-1 .main form .button {
+    width:250px;
+    height:100px;
+    /* background-color: rgb(215, 250, 225); */
+}
+
+.section-1 .main form .input-with-comment .comment {
+    color: #ffa00a;
+    text-align: left;
+    font-size: 15px;
+    padding: 8px; 
+    display: none;
+}
+
+.section-1 .main form .input-with-comment #email:focus ~ .comment {
+    display: block;
+}  
+  
+/* section-2 */
+.container-2 {
+    width: 100%;
+    background-color:#000000;
+}
+
+.section-2 {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 75px 150px;
+    border-bottom: 10px solid #303030;
+}
+
+.section-2 .tv-image img {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+}
+
+.section-2 .tv-image text {
+    width: 500px;
+    height:400; 
+}
+
+.section-2 .tv-image video {
+   width: 420px; 
+   height: 350px;
+   position: relative;
+   z-index: 1;
+   object-fit: contain;
+   top:10px;
+   left: 63px;
+}
+
+.section-2 h1 {
+    font-size: 50px;
+}
+
+.section-2 h3 {
+    font-size: 28px;
+    font-weight: lighter;
+} 
+
+/* section-3  */
+.section-3 {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 50px 150px;
+    border-bottom: 10px solid #303030;
+    position: relative;
+    z-index: 1;
+}
+
+.section-3 .download-image .image {
+    width: 500px;
+    height:400px;
+}
+
+.section-3 .download-text {
+    width: 550px;
+    height:400;  
+}
+
+.section-3 h1 {
+    font-size: 50px;
+}
+
+.section-3 h3 {
+    font-size: 28px;
+    font-weight: lighter;
+} 
+
+/* download-animtion */
+.download-animation {
+    width: 300px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid #303030 ;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center; 
+    position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    left: 14%;
+}
+
+.download-animation .animation-image img {
+   width: 35px;
+   height: 50px;
+}
+
+.animation-text .text1 {
+   font-weight: 500;
+   font-size: 15px;
+}
+
+.animation-text .text2 {
+   font-size: 13px;
+   color: blue;
+} 
+
+/* section-4 */
+.section-4 {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 50px 150px;
+    border-bottom: 10px solid #303030;
+    margin-top: -40px;
+}
+
+.section-4 .watch-image img{
+    width: 500px;
+    height:400;
+    position: absolute;
+    z-index: 2;
+    margin-top: -40px;
+}
+
+.section-4 .watch-image video {
+    position: relative;
+    z-index: 1;
+    width: 36%;
+    right: 47%;
+    left: 10%;
+}
+
+.section-4 .watch-text {
+    width: 500px;
+    height:400; 
+}
+
+.section-4 h1 {
+    font-size: 50px;
+}
+
+.section-4 h3 {
+    font-size: 28px;
+    font-weight: lighter;
+} 
+
+/* section-5 */
+.section-5 {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 50px 150px;
+    border-bottom: 10px solid #303030;
+}
+
+.section-5 .children-image img{
+    width: 500px;
+    height:400;
+}
+
+.section-5 .children-text {
+    width: 500px;
+    height:400;   
+}
+
+.section-5 h1 {
+    font-size: 50px;
+}
+
+.section-5 h3 {
+    font-size: 28px;
+    font-weight: lighter;
+} 
+
+/* FAQ-section */
+.faq-container {
+  width: 100%;
+}
+
+.faq-container h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.accordion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 55%; 
+    margin-bottom: 40px;
+}
+
+.accordion-tab {
+    background-color:#303030 ;
+    color: white;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.accordion-tab .accordion-toggle {
+    position: absolute;
+    display: none;
+}
+
+.accordion-tab label {
+   padding: 20px;
+   position: relative;
+   display: block;
+   border-bottom: 1px solid black;
+}
+
+.accordion-tab .accordion-content p {
+   padding: 0 20px;
+}  
+
+.accordion-tab .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.accordion-tab label::after {
+    content: "\2b";
+    font-family: fontawesome;
+    position: absolute;
+    top: 20px;
+    right: 20px;  
+}
+
+.accordion-tab .accordion-toggle:checked ~ .accordion-content {
+    max-height: 100vh;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ label:after{
+     transform: rotate(-45deg);
+     transition: transform 0.3s;
+}
+
+/* form  */
+.faq-form {
+    padding-bottom: 80px;
+    border-bottom: 10px solid #303030;
+}
+
+.faq-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-form p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq-form form input {
+    width: 550px;
+    height: 65px;
+    border: none;
+    outline: none;
+}
+
+.faq-form form input::placeholder {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.faq-form form button {
+    width: 250px;
+    height: 67px;
+    background-color: #E50914;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;   
+}
+
+/* footer */
+.footer {
+    padding: 20px 150px;
+    color: #757575;
+}
+
+.contact-info p a {
+    text-decoration: none;
+    color: #757575;
+}
+
+.contact-info p a:hover {
+    text-decoration: underline;
+}
+
+.items ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    padding: initial;
+}
+
+.items ul li {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* dropdown */
+.footer .dropdown select {
+    padding: 8px 12px;
+    background: none;
+    color: #757575;
+    outline:1px solid #757575;
+    border-radius: 3px;
+}
+
+.footer .dropdown select option {
+    background-color: darkgray;
+    font-weight: 600;
+}
+
+.footer .dropdown {
+    margin-bottom: 20px;
+}    
+      

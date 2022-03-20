@@ -10,7 +10,7 @@ body {
 .container-1 {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(../images/banner.jpg);
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(./images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     border-bottom: 10px solid #303030;
@@ -24,11 +24,8 @@ body {
 }
 
 .header .language select {
-    /* padding: 8px 12px; */
     background: none;
     color: white;
-    /* outline:1px solid white;
-    border-radius: 3px; */
     appearance: none;
     outline: none;
     border: none;
@@ -97,7 +94,6 @@ body {
     padding-left: 10px;
     box-sizing: border-box;
     position: relative;
-    /* caret-color: black;  */
 }
 
 .section-1 .main form input::placeholder {
@@ -127,13 +123,11 @@ body {
 .section-1 .main form .input-with-comment {
     width:550px;
     height:100px;
-    /* background-color: antiquewhite; */
 }
 
 .section-1 .main form .button {
     width:250px;
     height:100px;
-    /* background-color: rgb(215, 250, 225); */
 }
 
 .section-1 .main form .input-with-comment .comment {

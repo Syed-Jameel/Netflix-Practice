@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./images/favicon2.ico">
-    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut-icon" href="./images/favicon2.ico">
+    <link rel="stylesheet" href="effect.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="effect.css">
     <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
 </head>
+
 <body>
     <!--Container-1-->
     <div class="container-1">
         <div class="header">
             <div class="logo">
-                <img src="./images/logo.png" alt="Netflix-logo" width="220" height="120">
+                <img id="netflix" src="./images/logo.png" alt="logo">
             </div>
             <div class="language">
-                <!-- unicode:f0ac -->
                 <i class="fa-solid fa-globe"></i>
                 <select name="lang" id="lang">
                     <option value="english">English</option>
                     <option value="hindi">हिन्दी</option>
                 </select>
                 <i class="fa-solid fa-caret-down"></i>
-                <!-- unicode:f0d7 -->
             </div>
             <div class="signin">
-                <a href="#">Sign In</a>
+                <a href="javascript:void(0)">Sign In</a>
             </div>
         </div>
         <!--section-1-->
@@ -37,7 +37,7 @@
                 <h1>Unlimited movies, TV shows and more.</h1>
                 <h2>Watch anywhere. Cancel anytime.</h2>
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                <form action="#">
+                <form>
                     <div class="input-with-comment">
                         <input type="email" name="email" id="email" placeholder="Email address" required
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
@@ -53,7 +53,6 @@
 
     <!--Container-2-->
     <div class="container-2">
-
         <!--section-2-->
         <div class="section-2">
             <div class="tv-text">
@@ -188,7 +187,7 @@
             </div>
             <div class="faq-form">
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
-                <form action="#">
+                <form>
                     <input type="email" name="email" id="email" placeholder="Email address">
                     <button>Get Started ></button>
                 </form>
@@ -197,11 +196,10 @@
 
         <!-- footer -->
         <div class="footer">
-            <div class="footer container">
+            <div class="footer-container">
                 <div class="contact-info">
                     <p>Questions? Call <a href="#">000-800-040-1843</a></p>
                 </div>
-
                 <div class="items">
                     <ul>
                         <li>FAQ</li>
@@ -221,17 +219,18 @@
                         <li>Contact Us</li>
                     </ul>
                 </div>
-
-                <div class="dropdown">
+                <div class="language">
+                    <i class="fa-solid fa-globe"></i>
                     <select name="lang" id="lang">
                         <option value="english">English</option>
                         <option value="hindi">हिन्दी</option>
                     </select>
+                    <i class="fa-solid fa-caret-down"></i>
                 </div>
-
                 <div class="end-name">Netflix India</div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
